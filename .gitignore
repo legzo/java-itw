@@ -1,0 +1,23 @@
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+!.bowerrc
+
+.settings*
+.classpath*
+.project*
+*.iml
+*.jar
+*.war
+node/
+node_modules/
+etc/
+target/
+git.properties
+rebel.xml
+bower_components/
+*.pyc
