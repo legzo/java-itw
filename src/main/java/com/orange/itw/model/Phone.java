@@ -20,9 +20,9 @@ public class Phone {
         this.price = price;
     }
 
-    // TODO ajouter une méthode pour retourner le nom complet du téléphone
-    // formaté : "Marque Modèle" (marque et modèle commencent par une majuscule).
-    // L'utiliser là où c'est utile.
+    // TODO : Ajouter une méthode pour retourner le nom complet du téléphone
+    // formaté comme suit : "Marque Modèle" (marque et modèle commencent par
+    // une majuscule). Utiliser cette méthode là où c'est utile.
 
     public String getName() {
         return name;
@@ -49,7 +49,7 @@ public class Phone {
     }
 
 
-    // TODO modifier la méthode getPrice pour retourner le prix en tenant compte des
+    // TODO : Modifier la méthode getPrice pour retourner le prix en tenant compte des
     // discounts. On applique seulement la première discount valide (une discount
     // est valide si et seulement si la startDate est dépassée et l'endDate pas
     // encore atteinte).
