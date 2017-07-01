@@ -1,0 +1,3 @@
+# java-itw
+
+Petit projet java permettant de se faire une idée sur un candidat en entretien...
