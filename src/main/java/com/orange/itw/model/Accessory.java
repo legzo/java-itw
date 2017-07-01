@@ -2,7 +2,7 @@ package com.orange.itw.model;
 
 public class Accessory {
 
-    // TODO : Un accessoire possède les attributs suivants :
+    // TODO 3 : Un accessoire possède les attributs suivants :
     // un nom       : chaine de caractères
     // une marque   : chaine de caractères
     // un prix      : flottant
