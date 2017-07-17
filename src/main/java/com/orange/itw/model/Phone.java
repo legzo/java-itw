@@ -21,9 +21,7 @@ public class Phone {
     }
 
     // TODO 1 : Ajouter une méthode pour retourner le nom complet du téléphone
-    // formaté comme suit : "Marque Modèle" (marque et modèle commencent par
-    // une majuscule). Utiliser cette méthode là où c'est utile.
-
+    // formaté comme suit : "Marque Modèle".
     public String getName() {
         return name;
     }
