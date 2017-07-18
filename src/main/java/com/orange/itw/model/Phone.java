@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public class Phone {
 
-    private String name;
+    private String model;
     private String brand;
 
     private boolean isInStock = true;
@@ -14,20 +14,20 @@ public class Phone {
 
     private Collection<Discount> discounts = new ArrayList<>();
 
-    public Phone(String name, String brand, float price) {
-        this.name = name;
+    public Phone(String model, String brand, float price) {
+        this.model = model;
         this.brand = brand;
         this.price = price;
     }
 
     // TODO 1 : Ajouter une méthode pour retourner le nom complet du téléphone
     // formaté comme suit : "Marque Modèle".
-    public String getName() {
-        return name;
+    public String getModel() {
+        return model;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public String getBrand() {
