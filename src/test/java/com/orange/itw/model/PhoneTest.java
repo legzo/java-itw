@@ -16,14 +16,14 @@ public class PhoneTest {
 		assertThat(iphone7.getPrice(), is(749.9f));
 	}
 
-	//@Test
+    @Test
 	public void shouldGetDiscountedPriceWhenThereIsNoDiscount() throws Exception {
 		Phone iphone7 = new Phone("iPhone 7", "Apple", 749.9f);
 
 		assertThat(iphone7.getDiscountedPrice(), is(iphone7.getPrice()));
 	}
 
-	//@Test
+    @Test
 	public void shouldGetDiscountedPriceWhenThereIsOneDiscount() throws Exception {
 		Phone iphone7 = new Phone("iPhone 7", "Apple", 749.9f);
 		LocalDateTime now = LocalDateTime.now();
@@ -33,7 +33,7 @@ public class PhoneTest {
 		assertThat(iphone7.getDiscountedPrice(), is(739.9f));
 	}
 
-	//@Test
+    @Test
 	public void shouldGetDiscountedPriceWhenThereIsMultipleDiscount() throws Exception {
 		Phone iphone7 = new Phone("iPhone 7", "Apple", 749.9f);
 		LocalDateTime now = LocalDateTime.now();
@@ -46,5 +46,14 @@ public class PhoneTest {
 
 		assertThat(iphone7.getDiscountedPrice(), is(729.9f));
 	}
+
+    @Test
+    public void shouldGetDiscountedPriceWhenThereIsNotCompleteDiscount() throws Exception {
+        Phone iphone7 = new Phone("iPhone 7", "Apple", 749.9f);
+        Discount promo99 = new Discount(null, null, 99f);
+        iphone7.getDiscounts().add(promo99);
+
+        assertThat(iphone7.getDiscountedPrice(), is(iphone7.getPrice()));
+    }
 
 }
