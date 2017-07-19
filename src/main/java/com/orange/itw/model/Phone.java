@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Phone {
+    // TODO 1 : Ajouter une méthode pour retourner le nom complet du téléphone
+    // formaté comme suit : "Marque Modèle".
+
+    // TODO 2 : Compléter la méthode getDiscountedPrice pour retourner le prix
+    // en tenant
+    // compte des discounts. On applique seulement la première discount
+    // valide (une discount est valide si et seulement si la startDate est
+    // dépassée et l'endDate pas encore atteinte).
 
     private String model;
     private String brand;
@@ -20,8 +28,6 @@ public class Phone {
         this.price = price;
     }
 
-    // TODO 1 : Ajouter une méthode pour retourner le nom complet du téléphone
-    // formaté comme suit : "Marque Modèle".
     public String getModel() {
         return model;
     }
@@ -62,10 +68,6 @@ public class Phone {
         this.discounts = discounts;
     }
 
-    // TODO 2 : Compléter la méthode suivante pour retourner le prix en tenant compte des
-    // discounts. On applique seulement la première discount valide (une discount
-    // est valide si et seulement si la startDate est dépassée et l'endDate pas
-    // encore atteinte).
     public float getDiscountedPrice() {
         return 0f;
     }
