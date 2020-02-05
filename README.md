@@ -1,6 +1,6 @@
 # ⚡️ Dojo Starter [![Build Status](https://travis-ci.org/legzo/dojo-starter-kotlin.svg?branch=master)](https://travis-ci.org/legzo/dojo-starter-kotlin)
 
-- Kotlin 1.3.50
+- Kotlin 1.3.61
 - JUnit 5
 - Kotlintest assertions
 
