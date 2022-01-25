@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.10"
-    id("com.github.ben-manes.versions") version "0.38.0"
+    kotlin("jvm") version "1.6.10"
+    id("com.github.ben-manes.versions") version "0.41.0"
 }
 
 group = "com.orange.ccmd.dojo"
@@ -14,10 +14,10 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.slf4j:slf4j-api:1.7.30")
+    implementation("org.slf4j:slf4j-api:1.7.34")
 
-    testImplementation("ch.qos.logback:logback-classic:1.2.3")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
+    testImplementation("ch.qos.logback:logback-classic:1.2.10")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("io.kotest:kotest-assertions-jvm:4.0.7")
 }
 
