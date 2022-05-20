@@ -6,6 +6,6 @@ class DemoTest {
 
     @Test
     void shouldAddNumbers() {
-        assertEquals(4, NumbersAdder.add(2, 2));
+        assertEquals(4, 2 + 2);
     }
 }
