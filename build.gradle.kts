@@ -15,11 +15,11 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.slf4j:slf4j-api:1.7.36")
-    implementation("ch.qos.logback:logback-classic:1.2.11")
+    implementation("org.slf4j:slf4j-api:2.0.3")
+    implementation("ch.qos.logback:logback-classic:1.4.4")
 
-    testImplementation("org.assertj:assertj-core:3.22.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation("org.assertj:assertj-core:3.23.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
 }
 
 tasks.withType<Test> {
