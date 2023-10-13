@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "1.6.21"
-    id("com.github.ben-manes.versions") version "0.42.0"
+    kotlin("jvm") version "1.9.10"
+    id("com.github.ben-manes.versions") version "0.49.0"
 }
 
 group = "com.orange.ccmd.dojo"
@@ -14,12 +14,12 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-    implementation("org.slf4j:slf4j-api:2.0.3")
-    implementation("ch.qos.logback:logback-classic:1.4.4")
+    implementation(kotlin("stdlib"))
+    implementation("org.slf4j:slf4j-api:2.0.5")
+    implementation("ch.qos.logback:logback-classic:1.4.7")
 
-    testImplementation("org.assertj:assertj-core:3.23.1")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
+    testImplementation("org.assertj:assertj-core:3.24.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
 }
 
 tasks.withType<Test> {
